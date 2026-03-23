@@ -2,6 +2,12 @@
 
 To create an EKS cluster using `eksctl`, your AWS identity (IAM user or role) must have sufficient permissions.
 
+other wise you get this error
+
+eksctl create cluster --config-file=eks.yaml
+Error: checking AWS STS access – cannot get role ARN for current session: operation error STS: GetCallerIdentity, get identity: get credentials: failed to refresh cached credentials, no EC2 IMDS role found, operation error ec2imds: GetMetadata, http response error StatusCode: 404, request to EC2 IMDS failed
+
+
 ---
 
 ## 🔹 Option 1: Quick Setup (For Testing Only)
