@@ -92,7 +92,9 @@ Run the following command:
 
 ```bash
 aws sts get-caller-identity
+```
 
 ## if not getting response froms eks
-
+```bash
 aws eks update-kubeconfig --region us-east-1 --name sampleapp
+```
